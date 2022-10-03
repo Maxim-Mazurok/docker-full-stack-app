@@ -1,6 +1,6 @@
 # Docker Node MongoDB Example
 
-> Simple example of a dockerized Node/Mongo app
+Simple example of a dockerized Node/Mongo app from the Coursera Guided Project: [https://www.coursera.org/projects/containerize-full-stack-nodejs-application-in-docker](Containerize a full-stack NodeJS application in Docker)
 
 ## Quick Start
 

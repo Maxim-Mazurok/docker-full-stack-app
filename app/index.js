@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   
   Item.find()
     .then(items => res.render('index', { items }))
-    .catch(err => res.status(404).json({ msg: 'No items found' }));
+    .catch(err => res.status(404).json({ msg: 'No items found', err }));
 });
 
 app.post('/item/add', (req, res) => {
@@ -37,8 +37,8 @@ app.post('/item/add', (req, res) => {
   newItem.save().then(item => res.redirect('/'));
 });
 
-const port = 3000
+const port = 3000;
 
 // which port is the node server listening on?
 
-app.listen(port, () => console.log('I will not run', port));
+app.listen(port, () => console.log('Port is open: ', port));
